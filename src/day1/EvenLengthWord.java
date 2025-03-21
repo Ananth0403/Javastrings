@@ -2,18 +2,18 @@ package day1;
 
 import java.util.Scanner;
 
-public class EvenLengthWord {
+import base.BaseClass;
+
+public class EvenLengthWord extends BaseClass {
 	Scanner sc = new Scanner(System.in);
 	int count=1;
 
 	public static void main(String[] args) {
-		EvenLengthWord obj = new EvenLengthWord();
-		obj.evenLength();
-		obj.replaceA();
+		
+//		obj.replaceA();
 	}
-	public void evenLength() {
-		System.out.print("Enter the sentence: ");
-		String s = sc.nextLine();
+	public void evenLength(String s) {
+		
 		String[] words = s.split("[\\s,]+");
 		for(String w:words) {
 			if(w.length()%2==0) {
