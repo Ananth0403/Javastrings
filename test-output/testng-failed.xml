@@ -5,7 +5,7 @@
     <classes>
       <class name="day3.Palindrome">
         <methods>
-          <include name="fun"/>
+          <include name="fun" invocation-numbers="0"/>
         </methods>
       </class> <!-- day3.Palindrome -->
     </classes>

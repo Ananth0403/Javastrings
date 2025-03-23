@@ -2,26 +2,26 @@ package day2;
 
 import java.util.Scanner;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import base.DataProviderClass;
+
 public class InsertString {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter the String: ");
-		String st = sc.nextLine();
-		System.out.print("new string: ");
-		String ne = sc.nextLine();
+	
+//	public static void usingInBuilt(String old, String newSt, int pos) {
+//		StringBuilder sb = new StringBuilder();
+//		sb.append(old);
+//		sb.insert(pos, newSt);
+//		System.out.println(sb);
+//	}
+	
+	@Test(dataProvider="insertstring", dataProviderClass = DataProviderClass.class)
+	public static void usingCustom(String old, String newSt) {
 		System.out.println("Enter the position: ");
+		Scanner sc = new Scanner(System.in);
 		int pos = sc.nextInt();
-		usingCustom(st, ne, pos);
-		
-	}
-	public static void usingInBuilt(String old, String newSt, int pos) {
-		StringBuilder sb = new StringBuilder();
-		sb.append(old);
-		sb.insert(pos, newSt);
-		System.out.println(sb);
-	}
-	public static void usingCustom(String old, String newSt, int pos) {
 		String s ="";
 		int count=0, flag=0;
 		for(int i=0;i<old.length();i++) {
@@ -47,6 +47,7 @@ public class InsertString {
 			}
 		}
 		System.out.println(s);
+		Assert.assertTrue(true);
 	}
 
 }
