@@ -38,6 +38,7 @@ public class DataProviderClass {
 	}
 	
 	
+	
 	@DataProvider(name="palindrome")
 	public static Object[][] palindromedata() {
 		System.out.println("------------Palindrome-------------");
@@ -86,4 +87,18 @@ public class DataProviderClass {
 		return new Object[][] {{s,len}};
 	}
 	
+	@DataProvider(name="replaceChar")
+	public static Object[][] replaceChar(){
+		System.out.println("-----------replaceChar------------");
+		System.out.println("Enter the string: ");
+		String s = sc.nextLine();
+		System.out.println("Enter the pos: ");
+		int pos= sc.nextInt();
+		System.out.println("Enter the char: ");
+		char c = sc.next().charAt(0);
+		Helper helper = new Helper(pos,s,c);
+		return new Object[][] {{helper}};
+	}
+	
+ 	
 }

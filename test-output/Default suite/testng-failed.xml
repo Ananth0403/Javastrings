@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day6.SwapTwo">
+      <class name="day6.ReplaceChar">
         <methods>
-          <include name="swapTwo" invocation-numbers="0"/>
+          <include name="replaceChar"/>
         </methods>
-      </class> <!-- day6.SwapTwo -->
+      </class> <!-- day6.ReplaceChar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
