@@ -5,10 +5,14 @@
     <classes>
       <class name="day1.EvenLengthWord">
         <methods>
-          <include name="Base"/>
-          <include name="evenLength"/>
+          <include name="evenLength" invocation-numbers="0"/>
         </methods>
       </class> <!-- day1.EvenLengthWord -->
+      <class name="day4.CheckAnagram">
+        <methods>
+          <include name="checkAnagram" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- day4.CheckAnagram -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

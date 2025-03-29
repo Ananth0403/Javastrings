@@ -6,6 +6,7 @@
     	<class name="day3.Palindrome"/>
       <class name="day1.EvenLengthWord"/>
       <class name="day2.InsertString"/>
+      <class name="day4.CheckAnagram"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day3.Palindrome">
+      <class name="day4.CheckAnagram">
         <methods>
-          <include name="fun" invocation-numbers="0"/>
+          <include name="checkAnagram" invocation-numbers="0"/>
         </methods>
-      </class> <!-- day3.Palindrome -->
+      </class> <!-- day4.CheckAnagram -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
