@@ -77,4 +77,13 @@ public class DataProviderClass {
 		return new Object[][] {{s,len}};
 	}
 	
+	@DataProvider(name="swapTwo")
+	public static Object[][] swapTwo() {
+		System.out.println("-----------SwapTwo------------");
+		System.out.println("Enter the string: ");
+		String s = sc.nextLine();
+		int len = s.length();
+		return new Object[][] {{s,len}};
+	}
+	
 }
